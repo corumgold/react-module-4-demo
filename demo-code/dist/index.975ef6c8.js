@@ -26983,38 +26983,36 @@ function App() {
                 children: "Count provider"
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 7,
+                lineNumber: 6,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "The count is: 0"
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 8,
+                lineNumber: 7,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                onClick: "increment",
                 className: "btn btn-primary",
                 children: "count++"
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 9,
+                lineNumber: 8,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                onClick: "decrement",
                 className: "btn btn-primary",
                 children: "count--"
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 15,
+                lineNumber: 9,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 6,
+        lineNumber: 5,
         columnNumber: 5
     }, this);
 }
