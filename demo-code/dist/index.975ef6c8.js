@@ -2876,12 +2876,19 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _app = require("./App");
+var _countProvider = require("./CountProvider");
 const container = document.getElementById("root");
 const root = (0, _client.createRoot)(container);
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _app.App), {}, void 0, false, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _countProvider.CountProvider), {
+    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _app.App), {}, void 0, false, {
+        fileName: "src/index.js",
+        lineNumber: 11,
+        columnNumber: 5
+    }, undefined)
+}, void 0, false, {
     fileName: "src/index.js",
-    lineNumber: 9,
-    columnNumber: 5
+    lineNumber: 10,
+    columnNumber: 3
 }, undefined));
 
   $parcel$ReactRefreshHelpers$20e5.postlude(module);
@@ -2889,7 +2896,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _app.App), {}, void 0, 
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./App":"2kQhy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./App":"2kQhy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./CountProvider":"bvRHw"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("./cjs/react-jsx-dev-runtime.development.js");
 
@@ -26975,7 +26982,11 @@ parcelHelpers.export(exports, "App", ()=>App);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _countProvider = require("./CountProvider");
+var _s = $RefreshSig$();
 function App() {
+    _s();
+    const { count , increment , decrement  } = (0, _react.useContext)((0, _countProvider.CountContext));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "layout",
         children: [
@@ -26983,39 +26994,45 @@ function App() {
                 children: "Count provider"
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 6,
+                lineNumber: 9,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "The count is: 0"
-            }, void 0, false, {
+                children: [
+                    "The count is: ",
+                    count
+                ]
+            }, void 0, true, {
                 fileName: "src/App.js",
-                lineNumber: 7,
+                lineNumber: 10,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: increment,
                 className: "btn btn-primary",
                 children: "count++"
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 8,
+                lineNumber: 11,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: decrement,
                 className: "btn btn-primary",
                 children: "count--"
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 9,
+                lineNumber: 14,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 5,
+        lineNumber: 8,
         columnNumber: 5
     }, this);
 }
+_s(App, "3bHhFZdK2jQFbURQXLyVS5RTv0U=");
 _c = App;
 var _c;
 $RefreshReg$(_c, "App");
@@ -27025,7 +27042,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./CountProvider":"bvRHw"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27175,6 +27192,54 @@ function registerExportsForReactRefresh(module) {
     }
 }
 
-},{"react-refresh/runtime":"786KC"}]},["1xC6H","1RB6v","8lqZg"], "8lqZg", "parcelRequire9d29")
+},{"react-refresh/runtime":"786KC"}],"bvRHw":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bcae = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$bcae.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CountProvider", ()=>CountProvider);
+parcelHelpers.export(exports, "CountContext", ()=>CountContext);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+const CountContext = /*#__PURE__*/ (0, _react.createContext)();
+function CountProvider({ children  }) {
+    _s();
+    const [count, setCount] = (0, _react.useState)(0);
+    function increment() {
+        setCount(count + 1);
+    }
+    function decrement() {
+        setCount(count - 1);
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CountContext.Provider, {
+        value: {
+            count,
+            increment,
+            decrement
+        },
+        children: children
+    }, void 0, false, {
+        fileName: "src/CountProvider.js",
+        lineNumber: 17,
+        columnNumber: 5
+    }, this);
+}
+_s(CountProvider, "oDgYfYHkD9Wkv4hrAPCkI/ev3YU=");
+_c = CountProvider;
+var _c;
+$RefreshReg$(_c, "CountProvider");
+
+  $parcel$ReactRefreshHelpers$bcae.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","1RB6v","8lqZg"], "8lqZg", "parcelRequire9d29")
 
 //# sourceMappingURL=index.975ef6c8.js.map
